@@ -104,7 +104,7 @@ function RenderDish({ dish }) {
          <Card>
             <CardImg top src={dish.image} alt={dish.name} />
             <CardBody>
-               <CardTitle>{dish.name}</CardTitle>
+               <CardTitle><h5 className='text-info'>{dish.name}</h5></CardTitle>
                <CardText>{dish.description}</CardText>
             </CardBody>
          </Card>
@@ -116,7 +116,7 @@ function RenderComments({ comments, addComment, dishId }) {
    if (comments != null) {
       return (
          <div className="col-12 col-md-5 m-1">
-            <h4>Comments</h4>
+            <h4 className='text-info'>Comments</h4>
             <ul className="list-unstyled">
                {comments.map((comment) => {
                   return (
@@ -169,7 +169,7 @@ const Dishdetail = (props) => {
                      <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
                   </Breadcrumb>
                   <div className="col-12">
-                     <h3>{props.dish.name}</h3>
+                     <h3 className='text-secondary'>{props.dish.name}</h3>
                      <hr />
                   </div>
                </div>
