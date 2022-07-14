@@ -58,7 +58,7 @@ import { Loading } from './LoadingComponent';
                             <BreadcrumbItem active>Menu</BreadcrumbItem>
                         </Breadcrumb>
                         <div className="col-12">
-                            <h3 class="text-secondary">Menu</h3>
+                            <h3 className="text-secondary">Menu</h3>
                             <hr />
                         </div>                
                     </div>
